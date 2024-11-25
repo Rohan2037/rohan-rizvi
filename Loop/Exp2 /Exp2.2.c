@@ -2,18 +2,18 @@
 
 
 int main(){
-    int num;
+    int start_num,end_num,sum=0,i;
 
-    printf("\t\t\t *** Even Odd Finder *** \n\n\n");
+    printf("\t\t\t *** Sum of Odd Numbers *** \n\n\n");
 
-    printf("Enter Number: ");
-    scanf("%d", &num);
+    // Take User Input
+    printf("Enter Start Number: ");
+    scanf("%d", &start_num);
+    printf("Enter Ending Number: ");
+    scanf("%d", &end_num);
 
-    if(num%2==0){
-        printf("%d is Even", num);
-    }else{
-        printf("%d is Odd", num);
+    // Check if starting number is higher than ending number
+    if(start_num > end_num){
+        printf("Error: Ending number should be higher than Starting Number");
+        return 1;
     }
-
-    return 0;
-}
